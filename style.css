@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  background-image: url(https://wallpapercave.com/wp/wp3906251.jpg);
+  font-family: 'Silkscreen', sans-serif;
+}
+
+.container{
+  height: 600px;
+  margin: auto;
+  width: 100%
+}
+
+h1 {
+  text-align: center;
+  padding: 50px;
+  color: rgb(240, 54, 54);
+  text-shadow: -4px -6px 0 #000000;
+  font-size: 50px;
+  -webkit-text-stroke: 2px white;
+
+}
+
+.board {
+  display: grid;
+  width: 600px;
+  grid-template-columns: repeat(10, 1fr);
+  margin: auto;
+}
+
+.board div {
+  width: 60px;
+  height: 60px;
+  /* border: 0.2px solid black; */
+}
+
+#P1,
+#P2,
+#P3,
+#P4 {
+  display: grid;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  position: relative;
+  border: 3px solid black;
+  text-align: center;
+}
+
+#P1 {
+  position: relative;
+  z-index: 5;
+  top: 0px;
+  left: -65px;
+  transition: all linear 1s;
+  background-color: rgb(236, 82, 82);
+}
+
+#P2 {
+  position: relative;
+  z-index: 4;
+  top: -90px;
+  left: -65px;
+  transition: all linear 1s;
+  background-color: rgb(243, 181, 46);
+}
+
+#P3 {
+  position: relative;
+  z-index: 3;
+  top: -180px;
+  left: -65px;
+  transition: all linear 1s;
+  background-color: rgb(70, 197, 19);
+}
+
+#P4 {
+  position: relative;
+  z-index: 2;
+  top: -270px;
+  left: -65px;
+  transition: all linear 1s;
+  background-color: rgb(25, 38, 212);
+}
+
+.menu {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  background-color: rgba(187, 255, 0, 0.7);
+  padding: 50px;
+  border-radius: 29px;
+  top: 200px;
+  left: 120px;
+  font-size: 2rem;
+  z-index: 99;
+  border: 7px solid rgb(3, 158, 148);
+}
+.rmenu {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  background-color: rgba(187, 255, 0, 0.7);
+  padding: 50px;
+  border-radius: 29px;
+  top: 200px;
+  right: 120px;
+  font-size: 2rem;
+  z-index: 99;
+  border: 7px solid rgb(3, 158, 148);
+}
+
+#dadu-btn {
+  z-index: 99;
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgb(14, 76, 130);
+  border-radius: 20px;
+  height: 35px;
+  width: 200px;
+  margin-top: 75px ;
+  font-family: 'Silkscreen', sans-serif;
+  color: white;
+}
+
+img {
+  display: grid;
+  margin: auto;
+  position: relative;
+  top: -642px;
+  left: 0px;
+  width: 610px;
+  height: 625px;
+  border-radius: 10px;
+  border: 12px solid #c4faf8;
+  box-shadow: 15px 25px 50px;
+}
+
+#turn-player{
+  text-align: center;
+}
+
+.addbtn {
+  z-index: 99;
+  cursor: pointer;
+  border-radius: 35px;
+  border: 2px solid black;
+  height: 35px;
+  width: 200px;
+  font-family: 'Silkscreen', sans-serif;
+}
+
+#reset {
+  z-index: 99;
+  cursor: pointer;
+  border-radius: 35px;
+  border: 2px solid black;
+  height: 35px;
+  width: 200px;
+  margin-top: 50px;
+  font-family: 'Silkscreen', sans-serif;
+  opacity: 80%;
+}
+
+#reset:hover {
+  z-index: 99;
+  cursor: pointer;
+  border-radius: 35px;
+  border: 2px solid black;
+  height: 35px;
+  width: 200px;
+  margin-top: 50px;
+  font-family: 'Silkscreen', sans-serif;
+  font-size: 15px;
+  opacity: 100%;
+}
+
+.addbtn:hover {
+  z-index: 99;
+  cursor: pointer;
+  border-radius: 35px;
+  border: 2px solid black;
+  height: 35px;
+  width: 200px;
+  font-family: 'Silkscreen', sans-serif;
+  font-size: 15px;
+}
+
+#dadu-btn:hover {
+  z-index: 99;
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgb(14, 76, 130);
+  border-radius: 20px;
+  height: 35px;
+  width: 200px;
+  margin-top: 75px ;
+  font-family: 'Silkscreen', sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+#angka{
+  font-size:60px;
+  margin-top: 25px;
+}
